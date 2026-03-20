@@ -4,9 +4,14 @@ console.log('[Newtab] Redirecting...');
 
 const urls = {
   'google': 'https://www.google.com/',
-  'startpage': 'https://www.startpage.com/',
+  'bing': 'https://www.bing.com/',
+  'qwant': 'https://www.qwant.com/',
   'duckduckgo': 'https://www.duckduckgo.com/',
-  'github': 'https://github.com/'
+  'startpage': 'https://www.startpage.com/',
+  'yahoo': 'https://search.yahoo.com/',
+  'ecosia': 'https://www.ecosia.org/',
+  'github': 'https://github.com/',
+  'brave': 'https://search.brave.com/'
 };
 
 // Get stored preference and redirect immediately
