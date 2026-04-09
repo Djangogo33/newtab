@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "AITools - New Tab",
+  "name": "New Tab",
   "version": "1.0",
   "description": "Redirige automatiquement vers votre page préférée",
   "permissions": ["tabs", "storage"],
