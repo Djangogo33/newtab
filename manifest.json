@@ -7,8 +7,14 @@
   "action": {
     "default_popup": "popup.html",
     "default_title": "Configurez votre page de démarrage"
+    "default_icon": {
+      "2048": "logo newtab.png"
+    }
   },
   "chrome_url_overrides": {
     "newtab": "newtab.html"
+  }
+  "icons": {
+    "512": "logo newtab.png"
   }
 }
