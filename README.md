@@ -1,4 +1,4 @@
-# 🚀 NewTab
+# 🚀 NewTab (Firefox version)
 **NewTab** est une extension de navigateur ultra-légère qui vous permet de reprendre le contrôle de votre page "Nouvel Onglet". Au lieu de la page par défaut souvent encombrée, elle vous redirige instantanément vers l'URL de votre choix.
 ## ✨ Fonctionnalités
  * ⚡ **Redirection Instantanée** : Ouvrez Google, votre tableau de bord personnel, ou n'importe quel site web dès que vous créez un nouvel onglet.
