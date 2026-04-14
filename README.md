@@ -10,5 +10,7 @@ L'extension utilise l'API chrome.tabs pour détecter l'ouverture d'un nouvel ong
  * Utiliser un moteur de recherche spécifique.
  * Atterrir directement sur votre calendrier ou votre liste de tâches.
  * Utiliser une page HTML locale personnalisée.
+## Comment l'utiliser ?
+ * Sélectionnez la branche qui vous convient (google chrome ou firefox) puis téléchargez le zip correspondant, dézipez le fichier et ouvrez le dans votre navigateur (dans l'onglet extension --> "charger l'extension non empaquetée")
 ## 👨‍💻 Auteur
 **Djangogo33**
