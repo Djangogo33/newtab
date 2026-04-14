@@ -1,4 +1,4 @@
-// Newtab - Instant Redirect Handler
+// Newtab - Instant Redirect Handler (Firefox)
 
 console.log('[Newtab] Redirecting...');
 
@@ -15,16 +15,16 @@ const urls = {
 };
 
 // Get stored preference and redirect immediately
-chrome.storage.local.get(['newtabUrlPreset', 'newtabUrlCustom'], (data) => {
+browser.storage.local.get(['newtabUrlPreset', 'newtabUrlCustom']).then((data) => {
   const preset = data.newtabUrlPreset || 'google';
   const customUrl = data.newtabUrlCustom;
-  
+
   let targetUrl = urls[preset] || urls['google'];
-  
+
   if (preset === 'custom' && customUrl) {
     targetUrl = customUrl;
   }
-  
+
   console.log('[Newtab] Redirecting to:', targetUrl);
   window.location.replace(targetUrl);
 });

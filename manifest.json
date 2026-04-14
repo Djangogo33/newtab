@@ -1,15 +1,21 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "New Tab",
   "version": "1.0",
   "description": "Redirige automatiquement vers votre page préférée",
-  "permissions": ["tabs", "storage"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "newtab@djangogo33",
+      "strict_min_version": "57.0"
+    }
+  },
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
     "128": "icon128.png"
   },
-  "action": {
+  "permissions": ["tabs", "storage"],
+  "browser_action": {
     "default_popup": "popup.html",
     "default_title": "Configurez votre page de démarrage",
     "default_icon": {

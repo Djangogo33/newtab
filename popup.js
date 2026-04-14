@@ -1,4 +1,4 @@
-// Newtab Popup Settings Handler
+// Newtab Popup Settings Handler (Firefox)
 
 console.log('[Newtab Popup] Initialized');
 
@@ -6,10 +6,10 @@ const newtabPreset = document.getElementById('newtabUrlPreset');
 const newtabCustom = document.getElementById('newtabUrlCustom');
 
 // Load saved settings
-chrome.storage.local.get(['newtabUrlPreset', 'newtabUrlCustom'], (data) => {
+browser.storage.local.get(['newtabUrlPreset', 'newtabUrlCustom']).then((data) => {
   const preset = data.newtabUrlPreset || 'google';
   newtabPreset.value = preset;
-  
+
   if (preset === 'custom') {
     newtabCustom.classList.add('show');
     if (data.newtabUrlCustom) {
@@ -21,8 +21,8 @@ chrome.storage.local.get(['newtabUrlPreset', 'newtabUrlCustom'], (data) => {
 // Preset changed
 newtabPreset.addEventListener('change', (e) => {
   const preset = e.target.value;
-  chrome.storage.local.set({ newtabUrlPreset: preset });
-  
+  browser.storage.local.set({ newtabUrlPreset: preset });
+
   if (preset === 'custom') {
     newtabCustom.classList.add('show');
     newtabCustom.focus();
@@ -36,7 +36,7 @@ newtabPreset.addEventListener('change', (e) => {
 newtabCustom.addEventListener('input', (e) => {
   const url = e.target.value;
   if (url) {
-    chrome.storage.local.set({ newtabUrlCustom: url });
+    browser.storage.local.set({ newtabUrlCustom: url });
     document.getElementById('feedback').textContent = '✅ URL enregistrée';
   }
 });
