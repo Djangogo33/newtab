@@ -5,16 +5,13 @@
   "description": "Redirige automatiquement vers votre page préférée",
   "permissions": ["tabs", "storage"],
   "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "1024": "logo newtab.png"
   },
   "action": {
     "default_popup": "popup.html",
     "default_title": "Configurez votre page de démarrage",
     "default_icon": {
-      "16": "icon16.png",
-      "48": "icon48.png"
+      "256": "logo newtab.png"
     }
   },
   "chrome_url_overrides": {
